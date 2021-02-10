@@ -11,7 +11,7 @@ use Mix.Config
 # before starting your production server.
 config :hello, HelloWeb.Endpoint,
   url: [schema : "https" , host: "https://powerful-lowlands-61733.herokuapp.com",  port: 443],
-  cache_static_manifest: "priv/static/cache_manifest.json"
+  cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: Map.fetch!(System.get_env() , "SECRET_KEY_BASE")
 # Do not print debug messages in production
 config :logger, level: :info
